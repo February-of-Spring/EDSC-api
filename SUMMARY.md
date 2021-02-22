@@ -1,20 +1,20 @@
 # Table of contents
 
 * [API Document](README.md)
-* [Post](home.md)
-  * [게시물](home.md)
-    - [게시물 생성하기]()
-    - [게시물 조회하기]()
-    - [게시물 수정하기]()
-    - [게시물 삭제하기]()
-    - [게시물 좋아요 누르기]()
-    - [게시물 좋아요 취소하기]()
-  * [댓글](home.md)
-    * 댓글 작성하기
-    - 대댓글 작성하기
-    - 댓글 수정하기
-    - 댓글 삭제하기
-* [Category](home.md)
+## Post
+* [게시물](post/posting/README.md)
+    * [게시물 생성하기](post/posting/post.md)
+    * [게시물 조회하기](post/posting/get.md)
+    * [게시물 수정하기](post/posting/put.md)
+    * [게시물 삭제하기](post/posting/delete.md)
+    * [게시물 좋아요 누르기](post/posting/post-like.md)
+    * [게시물 좋아요 취소하기](post/posting/delete-like.md)
+  * [댓글](post/comment/README.md)
+    * [댓글 작성하기]
+    * [대댓글 작성하기]
+    * [댓글 수정하기]
+    * [댓글 삭제하기]
+## Category
   - 카테고리 관리
     - 카테고리 생성하기
     - 카테고리 수정하기
