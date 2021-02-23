@@ -60,13 +60,3 @@ GET
 
 
 
-```json
-{
-    "email": "example@gmail.com",
-    "name": "수정",
-    "nickname": "수정",
-    "phone": "010-1234-5678",
-    "profileImage": "https://edsc-s3.s3.ap-northeast-2.amazonaws.com/profile-image/2"
-}
-```
-
