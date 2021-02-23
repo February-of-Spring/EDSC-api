@@ -18,7 +18,7 @@ GET
 
 ## RESPONSE
 
-- 카테고리 이름 리스트
+* 카테고리 이름 리스트
 
 ### RESPONSE EXAMPLE
 

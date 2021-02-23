@@ -18,23 +18,23 @@ GET
 
 ## RESPONSE
 
-- totalNum: 상위 카테고리 총 개수 (number)
-- parentList: 상위 카테고리 리스트 (parentPack 리스트)
-  - parentPack
-    - `parent`: 상위 카테고리 정보 (object)
-      - id: 카테고리 id
-      - name: 카테고리 이름
-      - level: 카테고리 레벨
-      - postNum: 하위 카테고리들의 게시물 개수 합
-      - parentCategoryId: 카테고리 id와 동일
-    - childNum: 해당 상위 카테고리의 하위 카테고리 개수
-    - childList: 하위 카테고리 리스트 (child 리스트)
-      - `child`: 하위 카테고리 정보 (object)
-        - id: 카테고리 id
-        - name: 카테고리 이름
-        - level: 카테고리 레벨
-        - postNum: 게시물 개수
-        - parentCategoryId: 상위 카테고리 id
+* totalNum: 상위 카테고리 총 개수 \(number\)
+* parentList: 상위 카테고리 리스트 \(parentPack 리스트\)
+  * parentPack
+    * `parent`: 상위 카테고리 정보 \(object\)
+      * id: 카테고리 id
+      * name: 카테고리 이름
+      * level: 카테고리 레벨
+      * postNum: 하위 카테고리들의 게시물 개수 합
+      * parentCategoryId: 카테고리 id와 동일
+    * childNum: 해당 상위 카테고리의 하위 카테고리 개수
+    * childList: 하위 카테고리 리스트 \(child 리스트\)
+      * `child`: 하위 카테고리 정보 \(object\)
+        * id: 카테고리 id
+        * name: 카테고리 이름
+        * level: 카테고리 레벨
+        * postNum: 게시물 개수
+        * parentCategoryId: 상위 카테고리 id
 
 ### RESPONSE EXAMPLE
 
@@ -42,7 +42,7 @@ GET
 
 **HTTP Status code : 200 OK**
 
-```json
+```javascript
 {
     "totalNum": 3,
     "parentList": [

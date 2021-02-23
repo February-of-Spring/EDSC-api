@@ -24,21 +24,21 @@ DELETE
 
 **HTTP Status code: 204 No Content**
 
-> Response Body는 따로 없습니다.  
-
+> Response Body는 따로 없습니다.
 
 ### fail
 
 **HTTP Status code: 400 Bad Request**
 
-```json
+```javascript
 {
     "status": "BAD_REQUEST",
     "message": "존재하지 않는 유저입니다."
 }
 ```
 
-| name    | type   | description |
-| ------- | ------ | ----------- |
-| status  | number | HTTP status |
+| name | type | description |
+| :--- | :--- | :--- |
+| status | number | HTTP status |
 | message | string | 에러 메시지 |
+

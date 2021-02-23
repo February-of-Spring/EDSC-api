@@ -20,17 +20,17 @@ PUT
 
 ## REQUEST BODY
 
-| name     | type   | require | description                                                  |
-| :------- | :----- | :------ | :----------------------------------------------------------- |
-| email    | string | 필수    | 이메일<br />수정 권한이 있는지 확인하는 용도로, 유저의 email는 수정되지 않습니다. |
-| name     | string | 필수    | 이름                                                         |
-| nickname | string | 필수    | 별명                                                         |
-| phone    | string | 필수    | 핸드폰 번호                                                  |
-| password | string | 필수    | 비밀번호                                                     |
+| name | type | require | description |
+| :--- | :--- | :--- | :--- |
+| email | string | 필수 | 이메일 수정 권한이 있는지 확인하는 용도로, 유저의 email는 수정되지 않습니다. |
+| name | string | 필수 | 이름 |
+| nickname | string | 필수 | 별명 |
+| phone | string | 필수 | 핸드폰 번호 |
+| password | string | 필수 | 비밀번호 |
 
 ### REQUEST BODY EXAMPLE
 
-```json
+```javascript
 {
     "name": "김구름",
     "nickname": "화요일",
@@ -45,36 +45,35 @@ PUT
 
 **HTTP Status code: 200 OK**
 
-> Response Body는 따로 없습니다.  
-
+> Response Body는 따로 없습니다.
 
 ### fail
 
 **HTTP Status code: 400 Bad Request or 403 Forbidden**
 
-```json
+```javascript
 {
     "status": "BAD_REQUEST",
     "message": "필수항목을 입력해주세요."
 }
 ```
 
-```json
+```javascript
 {
     "status": "BAD_REQUEST",
     "message": "존재하지 않는 유저입니다."
 }
 ```
 
-```json
+```javascript
 {
     "status": "FORBIDDEN",
     "message": "수정할 수 있는 권한이 없습니다."
 }
 ```
 
-| name    | type   | description |
-| ------- | ------ | ----------- |
-| status  | number | HTTP status |
+| name | type | description |
+| :--- | :--- | :--- |
+| status | number | HTTP status |
 | message | string | 에러 메시지 |
 

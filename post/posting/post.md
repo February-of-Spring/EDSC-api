@@ -1,5 +1,5 @@
 ---
-description: 게시물을 생성하는 API입니다
+description: 게시물을 생성하는 API입니다.
 ---
 
 # 게시물 생성하기
@@ -27,7 +27,7 @@ POST
 
 ### REQUEST BODY EXAMPLE
 
-```json
+```javascript
 {
     "email": "example@gmail.com",
     "title": "리액트 js 스터디 진행상황",
@@ -43,28 +43,27 @@ POST
 **HTTP Status code : 201 Created**
 
 > Response Body는 따로 없습니다.  
-> 대신, Http Location **헤더**에 생성된 자원의 경로를 붙여서 반환합니다.
-> ex) /posts/18
+> 대신, Http Location **헤더**에 생성된 자원의 경로를 붙여서 반환합니다. ex\) /posts/18
 
 ### fail
 
 **HTTP Status code : 400 Bad Request**
 
-```json
+```javascript
 {
     "status": "BAD_REQUEST",
     "message": "필수 항목을 입력해주세요."
 }
 ```
 
-```json
+```javascript
 {
     "status": "BAD_REQUEST",
     "message": "존재하지 않는 유저입니다."
 }
 ```
 
-```json
+```javascript
 {
     "status": "BAD_REQUEST",
     "message": "존재하지 않는 카테고리입니다."

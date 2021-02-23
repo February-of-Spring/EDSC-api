@@ -1,5 +1,5 @@
 ---
-description: 계정 한 개의 유저 정보를 조회하는 API입니다.
+description: 해당 id의 유저 정보를 조회하는 API입니다.
 ---
 
 # 유저 정보 조회하기
@@ -23,7 +23,7 @@ GET
 * email: 이메일 \(string\)
 * name: 이름 \(string\)
 * nickname: 별명 \(string\)
-* phone: 전화번호 (string)
+* phone: 전화번호 \(string\)
 * profileImage: 작성자 프로필 사진 \(이미지 링크 string or base64 encoded string / BLOB\)
 
 ### RESPONSE EXAMPLE
@@ -53,10 +53,8 @@ GET
 }
 ```
 
-| name    | type   | description |
-| :------ | :----- | :---------- |
-| status  | string | HTTP status |
+| name | type | description |
+| :--- | :--- | :--- |
+| status | string | HTTP status |
 | message | string | 에러 메시지 |
-
-
 

@@ -32,9 +32,9 @@
 * [유저 정보 관리](user/manage/README.md)
   * [유저 정보 조회하기](user/manage/get.md)
   * [유저 정보 수정하기](user/manage/put.md)
-  * [유저 목록 조회하기](user/manage/get-list.md)
   * [유저 프로필 이미지 수정하기](user/manage/patch-image.md)
   * [유저 프로필 이미지 삭제하기](user/manage/delete-image.md)
+* [유저 목록 조회하기](user/get-list.md)
 * [유저의 게시물 조회하기](user/get-post.md)
 * [유저의 좋아요 게시물 조회하기](user/get-like-post.md)
 

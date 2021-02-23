@@ -1,5 +1,5 @@
 ---
-description: 카테고리 정보를 수정하는 API입니다.
+description: 카테고리 관리 페이지에서 카테고리 정보를 수정하는 API입니다.
 ---
 
 # 카테고리 수정하기
@@ -21,13 +21,13 @@ PUT
 
 ## REQUEST BODY
 
-| name | type   | require | description |
-| :--- | :----- | :------ | :---------- |
-| name | string | 필수    | 이름        |
+| name | type | require | description |
+| :--- | :--- | :--- | :--- |
+| name | string | 필수 | 이름 |
 
 ### REQUEST BODY EXAMPLE
 
-```json
+```javascript
 {
     "name": "찬란한 팀"
 }
@@ -39,36 +39,35 @@ PUT
 
 **HTTP Status code: 200 OK**
 
-> Response Body는 따로 없습니다.  
-
+> Response Body는 따로 없습니다.
 
 ### fail
 
 **HTTP Status code: 400 Bad Request**
 
-```json
+```javascript
 {
     "status": "BAD_REQUEST",
     "message": "필수항목을 입력해주세요."
 }
 ```
 
-```json
+```javascript
 {
     "status": "BAD_REQUEST",
     "message": "존재하지 않는 카테고리입니다."
 }
 ```
 
-```json
+```javascript
 {
     "status": "BAD_REQUEST",
     "message": "이미 존재하는 카테고리입니다."
 }
 ```
 
-| name    | type   | description |
-| ------- | ------ | ----------- |
-| status  | number | HTTP status |
+| name | type | description |
+| :--- | :--- | :--- |
+| status | number | HTTP status |
 | message | string | 에러 메시지 |
 
