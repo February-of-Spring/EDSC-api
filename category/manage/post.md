@@ -67,6 +67,13 @@ POST
 ```json
 {
     "status": "BAD_REQUEST",
+    "message": "이미 존재하는 카테고리입니다."
+}
+```
+
+```json
+{
+    "status": "BAD_REQUEST",
     "message": "카테고리의 상위 항목이 존재하지 않습니다."
 }
 ```
