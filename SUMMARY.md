@@ -23,7 +23,7 @@
   * [카테고리 생성하기](category/manage/post.md)
   * [카테고리 수정하기](category/manage/put.md)
   * [카테고리 삭제하기](category/manage/delete.md)
-* [카테고리 전체 목록 조회하기](category/get.md)
+* [전체 카테고리 목록 조회하기](category/get.md)
 * [하위 카테고리 이름 조회하기](category/get-level2-name.md)
 * [카테고리 별 게시물 조회하기](category/get-post.md)
 
