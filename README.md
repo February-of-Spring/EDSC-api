@@ -2,72 +2,40 @@
 description: EDSC Api Document
 ---
 
-# API Document
+# EDSC API Document
 
-{% api-method method="post" host="https:/sdfsdf/api.cakes.com" path="/v1/cakes/:id" %}
-{% api-method-summary %}
-Get Cakes
-{% endapi-method-summary %}
+<br>
 
-{% api-method-description %}
-This endpoint allows you to get free cakes.
-{% endapi-method-description %}
+## Post
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" %}
-ID of the cake to get, for free of course.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+* [게시물](post/posting/README.md)
+  * [게시물 생성하기](post/posting/post.md)
+  * [게시물 조회하기](post/posting/get.md)
+  * [게시물 수정하기](post/posting/put.md)
+  * [게시물 삭제하기](post/posting/delete.md)
+  * [게시물 좋아요 누르기](post/posting/post-like.md)
+  * [게시물 좋아요 취소하기](post/posting/delete-like.md)
+* [댓글](post/comment/README.md)
+  * [댓글 작성하기](post/comment/post.md)
+  * [대댓글 작성하기](post/comment/post-child.md)
+  * [댓글 수정하기](post/comment/put.md)
+  * [댓글 삭제하기](post/comment/delete.md)
 
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-Authentication token to track down who is emptying our stocks.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+## Category
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="recipe" type="string" %}
-The API will do its best to find a cake matching the provided recipe.
-{% endapi-method-parameter %}
+* [카테고리 관리](category/manage/README.md)
+  * [카테고리 생성하기](category/manage/post.md)
+  * [카테고리 수정하기](category/manage/put.md)
+  * [카테고리 삭제하기](category/manage/delete.md)
+* [카테고리 전체 목록 조회하기](category/get.md)
+* [하위 카테고리 이름 조회하기](category/get-level2-name.md)
+* [카테고리 별 게시물 조회하기](category/get-post.md)
 
-{% api-method-parameter name="gluten" type="boolean" %}
-Whether the cake should be gluten-free or not.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+## User
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Cake successfully retrieved.
-{% endapi-method-response-example-description %}
-
-```
-{    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
-```
-{    "message": "Ain't no cake like that."}
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-### Post
-
-* 게시물 생성하기
-* 게시물 조회하기
-* 게시물 수정하기
-* 게시물 삭제하기
-
-
-
+* [유저 정보 관리](user/manage/README.md)
+  * [유저 정보 조회하기](user/manage/get.md)
+  * [유저 정보 수정하기](user/manage/put.md)
+  * [유저 목록 조회하기](user/manage/get-list.md)
+* [유저의 게시물 조회하기](user/get-post.md)
+* [유저의 좋아요 게시물 조회하기](user/get-like-post.md)
