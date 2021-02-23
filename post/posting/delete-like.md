@@ -13,7 +13,7 @@ DELETE
 ## URL
 
 ```text
-/posts/:id
+/posts/:id/likes
 ```
 
 * id: 게시물 고유 id
@@ -34,8 +34,8 @@ DELETE
 
 ```json
 {
-    "status": 400,
-    "message": "존재하지 않는 게시물입니다. "
+    "status": "BAD_REQUEST",
+    "message": "존재하지 않는 게시물입니다."
 }
 ```
 

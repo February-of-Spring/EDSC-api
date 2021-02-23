@@ -22,7 +22,7 @@ POST
 | :--- | :--- | :--- | :--- |
 | email | string | 필수 | 작성자 이메일 |
 | title | string | 필수 | 게시물 제목 |
-| content | string | 필수 | 게시물 내 |
+| content | string | 필수 | 게시물 내용 |
 | categoryName | string | 필수 | 존재하는 하위 카테고리 |
 
 ### REQUEST BODY EXAMPLE

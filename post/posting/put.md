@@ -1,2 +1,86 @@
+---
+description: 해당 id의 게시물을 수정하는 API입니다.
+---
+
 # 게시물 수정하기
+
+## METHOD
+
+```text
+PUT
+```
+
+## URL
+
+```text
+/posts/:id
+```
+
+* id: 프로젝트 페이지의 수정하려는 게시물 고유 id
+
+## REQUEST BODY
+
+| name         | type   | require | description                                            |
+| :----------- | :----- | :------ | :----------------------------------------------------- |
+| email        | string | 필수    | 작성자 이메일, 수정X, 수정 권한이 있는지 확인하는 용도 |
+| title        | string | 필수    | 게시물 제목                                            |
+| content      | string | 필수    | 게시물 내용                                            |
+| categoryName | string | 필수    | 존재하는 하위 카테고리                                 |
+
+### REQUEST BODY EXAMPLE
+
+```json
+{
+    "email": "example@gmail.com",
+    "title": "spring boot 스터디 진행상황 수정",
+    "content": "update test",
+    "categoryName": "백엔드"
+}
+```
+
+## RESPONSE
+
+### success
+
+**HTTP Status code: 200 OK**
+
+> Response Body는 따로 없습니다.  
+
+
+### fail
+
+**HTTP Status code: 400 Bad Request or 403 Forbidden**
+
+```json
+{
+    "status": "BAD_REQUEST",
+    "message": "필수항목을 입력해주세요."
+}
+```
+
+```json
+{
+    "status": "BAD_REQUEST",
+    "message": "존재하지 않는 게시물입니다."
+}
+```
+
+```json
+{
+    "status": "BAD_REQUEST",
+    "message": "존재하지 않는 카테고리입니다."
+}
+```
+
+```json
+{
+    "status": "FORBIDDEN",
+    "message": "수정할 수 있는 권한이 없습니다."
+}
+```
+
+| name    | type   | description |
+| ------- | ------ | ----------- |
+| status  | number | HTTP status |
+| message | string | 에러 메시지 |
 
