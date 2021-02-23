@@ -2,7 +2,7 @@
 description: EDSC Api Document
 ---
 
-# Home Page
+# API Document
 
 {% api-method method="post" host="https:/sdfsdf/api.cakes.com" path="/v1/cakes/:id" %}
 {% api-method-summary %}
