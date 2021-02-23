@@ -16,16 +16,16 @@ PUT
 /posts/:id
 ```
 
-* id: 프로젝트 페이지의 수정하려는 게시물 고유 id
+* id: 게시물 고유 id
 
 ## REQUEST BODY
 
-| name         | type   | require | description                                            |
-| :----------- | :----- | :------ | :----------------------------------------------------- |
-| email        | string | 필수    | 작성자 이메일, 수정X, 수정 권한이 있는지 확인하는 용도 |
-| title        | string | 필수    | 게시물 제목                                            |
-| content      | string | 필수    | 게시물 내용                                            |
-| categoryName | string | 필수    | 존재하는 하위 카테고리                                 |
+| name         | type   | require | description                                                  |
+| :----------- | :----- | :------ | :----------------------------------------------------------- |
+| email        | string | 필수    | 작성자 이메일<br />수정 권한이 있는지 확인하는 용도로, 작성자는 수정되지 않습니다. |
+| title        | string | 필수    | 게시물 제목                                                  |
+| content      | string | 필수    | 게시물 내용                                                  |
+| categoryName | string | 필수    | 존재하는 하위 카테고리                                       |
 
 ### REQUEST BODY EXAMPLE
 
