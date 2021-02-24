@@ -18,6 +18,7 @@ description: EDSC Api Document
   * [대댓글 작성하기](post/comment/post-child.md)
   * [댓글 수정하기](post/comment/put.md)
   * [댓글 삭제하기](post/comment/delete.md)
+* [메인 페이지의 게시물 조회하기](post/get-main.md)
 
 ## Category
 
