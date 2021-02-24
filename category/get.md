@@ -19,8 +19,8 @@ GET
 ## RESPONSE
 
 * totalNum: 상위 카테고리 총 개수 \(number\)
-* parentList: 상위 카테고리 리스트 \(parentPack 리스트\)
-  * parentPack
+* parentPackList: 상위 카테고리 리스트 \(`parentPack` 리스트\)
+  * `parentPack`
     * `parent`: 상위 카테고리 정보 \(object\)
       * id: 카테고리 id
       * name: 카테고리 이름
@@ -45,7 +45,7 @@ GET
 ```javascript
 {
     "totalNum": 3,
-    "parentList": [
+    "parentPackList": [
         {
             "parent": {
                 "id": 1,
