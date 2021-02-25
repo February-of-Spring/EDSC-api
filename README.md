@@ -9,7 +9,7 @@ description: EDSC Api Document
 * [게시물](post/posting/)
   * [이미지](post/posting/image/README.md)
     * [게시물 이미지 생성하기](post/posting/image/post.md)
-    * [게시물 이미지 수정하기](post/posting/image/oatch.md)
+    * [게시물 이미지 수정하기](post/posting/image/patch.md)
     * [게시물 이미지 삭제하기](post/posting/image/delete.md)
   * [파일](post/posting/file/README.md)
   * [게시물 생성하기](post/posting/post.md)

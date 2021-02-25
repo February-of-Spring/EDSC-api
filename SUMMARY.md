@@ -5,10 +5,11 @@
 ## Post
 
 * [게시물](post/posting/README.md)
-  * [이미지](post/posting/undefined/README.md)
-    * [게시물 이미지 생성하기](post/posting/undefined/undefined.md)
-    * [게시물 이미지 수정하기](post/posting/undefined/undefined-2.md)
-    * [게시물 이미지 삭제하기](post/posting/undefined/undefined-1.md)
+  * [이미지](post/posting/image/README.md)
+    * [게시물 이미지 생성하기](post/posting/image/post.md)
+    * [게시물 이미지 수정하기](post/posting/image/patch.md)
+    * [게시물 이미지 삭제하기](post/posting/image/delete.md)
+  * [파일](post/posting/file/README.md)
   * [게시물 생성하기](post/posting/post.md)
   * [게시물 조회하기](post/posting/get.md)
   * [게시물 수정하기](post/posting/put.md)
