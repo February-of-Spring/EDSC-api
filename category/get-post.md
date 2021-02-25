@@ -16,23 +16,23 @@ GET
 /category/:level1, /category/:level1/:level2
 ```
 
-- level1: 상위 카테고리 이름(string)
-- level2: 하위 카테고리 이름(string)
+* level1: 상위 카테고리 이름\(string\)
+* level2: 하위 카테고리 이름\(string\)
 
 ## RESPONSE
 
-* totalNum: post 객체의 개수 (number)
-* postList: post 리스트 (`post` List)
+* totalNum: post 객체의 개수 \(number\)
+* postList: post 리스트 \(`post` List\)
   * `post`: 게시물 정보
-    * id: 게시물 고유 id (number)
+    * id: 게시물 고유 id \(number\)
     * `category`: 게시물 카테고리 정보 \(object\)
       * id: 카테고리 id \(number\)
       * name: 카테고리 이름 \(string\)
       * level: 카레고리 level, 항상 2
-      * postNum: 카테고리가 가지고 있는 게시물 수 (number)
+      * postNum: 카테고리가 가지고 있는 게시물 수 \(number\)
       * parentCategoryId: 상위 카테고리 id, 항상 1
-    * `user`: 작성자 정보 (object)
-      * email: 이메일 (string)
+    * `user`: 작성자 정보 \(object\)
+      * email: 이메일 \(string\)
       * name: 이름 \(string\)
       * nickname: 별명 \(string\)
       * profileImage: 작성자 프로필 사진 \(이미지 링크 string or base64 encoded string / BLOB\)
@@ -47,7 +47,7 @@ GET
 
 **HTTP Status code : 200 OK**
 
-```json
+```javascript
 {
     "totalNum": 2,
     "postList": [
@@ -99,15 +99,15 @@ GET
 
 **HTTP Status code : 400 Bad Request**
 
-```json
+```javascript
 {
     "status": "BAD_REQUEST",
     "message": "존재하지 않는 카테고리입니다."
 }
 ```
 
-| name    | type   | description |
-| :------ | :----- | :---------- |
-| status  | string | HTTP status |
+| name | type | description |
+| :--- | :--- | :--- |
+| status | string | HTTP status |
 | message | string | 에러 메시지 |
 

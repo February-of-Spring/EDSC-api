@@ -47,9 +47,9 @@ GET
     * id: 파일 id \(number\)
     * path: 이미지 URI 경로 \(string\)
 * commentNum: 모든 댓글 수 \(number\)
-* commentPackList: 상위 댓글 리스트 (`commentPack` 리스트)
+* commentPackList: 상위 댓글 리스트 \(`commentPack` 리스트\)
   * `commentPack`
-    * `comment`: 상위 댓글 정보 (object)
+    * `comment`: 상위 댓글 정보 \(object\)
       * id: 댓글 고유 id \(number\)
       * user: 댓글 작성자 정보\(object\)
         * email: 이메일 \(string\)
@@ -57,11 +57,11 @@ GET
         * nickname: 별명 \(string\)
         * profileImage: 작성자 프로필 사진 \(이미지 링크 string or base64 encoded string / BLOB\)
       * content: 댓글 내용 \(string\)
-      * isPublic: 공개 여부 (boolean)
+      * isPublic: 공개 여부 \(boolean\)
       * createdAt: 댓글 작성 날짜 \(string / DATETIME\)
       * modifiedAt: 댓글 수정 날짜 \(string / DATETIME\)
     * childNum: 해당 댓글의 대댓글 수
-    * childList: 하위 댓글 리스트 (`child` 리스트)
+    * childList: 하위 댓글 리스트 \(`child` 리스트\)
       * `child`
         * id: 댓글 고유 id \(number\)
         * user: 댓글 작성자 정보\(object\)
@@ -70,7 +70,7 @@ GET
           * nickname: 별명 \(string\)
           * profileImage: 작성자 프로필 사진 \(이미지 링크 string or base64 encoded string / BLOB\)
         * content: 댓글 내용 \(string\)
-        * isPublic: 공개 여부 (boolean)
+        * isPublic: 공개 여부 \(boolean\)
         * createdAt: 댓글 작성 날짜 \(string / DATETIME\)
         * modifiedAt: 댓글 수정 날짜 \(string / DATETIME\)
 
@@ -186,6 +186,4 @@ GET
 | :--- | :--- | :--- |
 | status | string | HTTP status |
 | message | string | 에러 메시지 |
-
-
 
