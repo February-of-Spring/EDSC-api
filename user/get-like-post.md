@@ -18,6 +18,20 @@ GET
 
 * id: 유저 고유 id
 
+### Url Example
+
+```text
+users/1/likes?page=0&size=2&sort=post.likeCount,desc
+```
+
+### Query String
+
+| name | type   | require           | description                                                  |
+| ---- | ------ | ----------------- | ------------------------------------------------------------ |
+| page | number | 선택, 기본값 = 0  | 불러올 페이지, 0부터 시작                                    |
+| size | number | 선택, 기본값 = 20 | 불러올 게시물 개수                                           |
+| sort | string | 선택              | 정렬 기준, <br />유저가 좋아요한 최신 순: sort=id,desc<br />게시물 최신 순: sort:post.id,desc<br />정렬 기준 한개 이상 가능<br />sort=post.likeCount,desc&sort=post.viewCount,desc |
+
 ## RESPONSE
 
 * totalNum: 좋아요 한 post 객체의 개수 \(number\)

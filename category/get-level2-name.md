@@ -13,7 +13,7 @@ GET
 ## URL
 
 ```text
-/category/posts/level2
+/category/level2name
 ```
 
 ## RESPONSE

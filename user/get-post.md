@@ -18,6 +18,22 @@ GET
 
 * id: 유저 고유 id
 
+### URL EXAMPLE
+
+```text
+users/1/posts?page=0&size=2&sort=id,desc
+```
+
+### Query  String
+
+| name | type   | require           | description                                                  |
+| ---- | ------ | ----------------- | ------------------------------------------------------------ |
+| page | number | 선택, 기본값 = 0  | 불러올 페이지, 0부터 시작                                    |
+| size | number | 선택, 기본값 = 20 | 불러올 게시물 개수                                           |
+| sort | string | 선택              | 정렬 기준, <br />최신순: sort=id,desc<br />정렬 기준 한개 이상 가능<br />sort=likeCount,desc&sort=viewCount,desc |
+
+reference: [#](https://www.baeldung.com/spring-data-web-support)
+
 ## RESPONSE
 
 * totalNum: post 객체의 개수 \(number\)
