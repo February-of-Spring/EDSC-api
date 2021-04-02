@@ -13,7 +13,7 @@ DELETE
 ## URL <a id="url"></a>
 
 ```text
-/posts/image/:id
+/posts/:id/image
 ```
 
 * id: 게시물의 이미지 고유 id

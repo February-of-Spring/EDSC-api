@@ -13,7 +13,7 @@ PATCH
 ## URL
 
 ```text
-/posts/image/:id
+/posts/:id/image
 ```
 
 * id: 게시물에 첨부된 이미지 고유 id
